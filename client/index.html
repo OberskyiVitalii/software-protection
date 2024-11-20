@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація та авторизація</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="auth-forms">
+        <form id="register-form">
+          <h2>Реєстрація</h2>
+          <input type="text" id="register-login" placeholder="Логін" required />
+          <input
+            type="email"
+            id="register-email"
+            placeholder="Електронна пошта"
+            required
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Пароль"
+            required
+          />
+          <textarea
+            id="register-description"
+            placeholder="Розкажіть про себе"
+            required
+          ></textarea>
+          <button type="submit">Зареєструватися</button>
+        </form>
+
+        <form id="login-form">
+          <h2>Авторизація</h2>
+          <input type="text" id="login-login" placeholder="Логін" required />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Пароль"
+            required
+          />
+          <button type="submit">Увійти</button>
+        </form>
+      </div>
+      <button id="logout-button" style="display: none">Вийти</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
